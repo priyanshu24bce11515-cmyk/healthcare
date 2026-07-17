@@ -1,0 +1,9 @@
+azure-functions
+azure-identity
+azure-ai-textanalytics
+azure-communication-email
+azure-communication-sms
+pyodbc
+openai
+requests
+cryptography
