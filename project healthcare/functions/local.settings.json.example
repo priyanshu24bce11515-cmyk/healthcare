@@ -1,0 +1,52 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "ENVIRONMENT": "development",
+    "SQL_CONNECTION_STRING": "Driver={ODBC Driver 18 for SQL Server};Server=tcp:<server>.database.windows.net,1433;Database=<db>;Authentication=ActiveDirectoryMsi;",
+    "LANGUAGE_ENDPOINT": "https://<name>.cognitiveservices.azure.com/",
+    "LANGUAGE_KEY": "",
+    "AZURE_OPENAI_ENDPOINT": "https://<name>.openai.azure.com/",
+    "AZURE_OPENAI_CHAT_DEPLOYMENT": "gpt-4o-mini",
+    "AZURE_OPENAI_KEY": "",
+    "COMMS_CONNECTION_STRING": "",
+    "ACS_SENDER_PHONE": "",
+    "KEYVAULT_URI": "https://<name>.vault.azure.net/",
+    "USE_AOAI_RECOMMENDATIONS": "false",
+    "ALLOW_DEMO_PRINCIPAL": "true",
+
+    "HR_ALERT_MAX": "120",
+    "HR_ALERT_MIN": "45",
+    "HR_CRITICAL_MAX": "150",
+    "BP_SYS_ALERT_MAX": "140",
+    "BP_SYS_CRITICAL_MAX": "180",
+    "BP_SYS_ALERT_MIN": "80",
+    "BP_DIA_ALERT_MAX": "90",
+    "GLUCOSE_ALERT_MAX": "180",
+    "O2_SAT_ALERT_MIN": "92",
+    "TEMP_ALERT_MAX": "39.5",
+    "TEMP_ALERT_MIN": "35.0",
+    "SLEEP_MIN_HOURS": "6",
+    "STEP_GOAL_DEFAULT": "6000",
+    "ADHERENCE_ALERT_MIN": "80",
+    "ALERT_DEDUPE_HOURS": "4",
+
+    "FITBIT_CLIENT_ID": "",
+    "FITBIT_CLIENT_SECRET": "",
+    "FITBIT_REDIRECT_URI": "",
+    "FITBIT_VERIFICATION_CODE": "",
+    "GOOGLE_FIT_CLIENT_ID": "",
+    "GOOGLE_FIT_CLIENT_SECRET": "",
+    "GOOGLE_FIT_REDIRECT_URI": "",
+
+    "EHR_FHIR_BASE_URL": "",
+    "EHR_CLIENT_ID": "",
+    "EHR_CLIENT_SECRET": "",
+
+    "PHI_ENCRYPTION_KEY": ""
+  },
+  "Host": {
+    "CORS": "*"
+  }
+}
