@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface-1: #ffffff;
+  --plane: #f2f0ea;
+  --text-primary: #0b0b0b;
+  --text-secondary: #52514e;
+  --text-muted: #898781;
+  --grid: #e1e0d9;
+  --baseline: #c3c2b7;
+  --border: rgba(17, 16, 13, 0.22);
+
+  --status-good: #0ca30c;
+  --status-warning: #fab219;
+  --status-serious: #ec835a;
+  --status-critical: #d03b3b;
+
+  --series-1: #2a78d6; /* heart rate */
+  --series-2: #1baf7a; /* sleep */
+  --series-3: #eda100; /* steps */
+  --series-4: #4a3aa7; /* blood pressure */
+  --series-5: #e34948; /* glucose */
+  --series-6: #eb6834; /* adherence */
+
+  --role-base: #eef0f2; /* fallback */
+  --role-accent: #64748b;
+}
+
+[data-role-theme="patient-blue"] {
+  --role-base: #e1f1fb;
+  --role-accent: #0f7fb0;
+}
+[data-role-theme="patient-green"] {
+  --role-base: #eaf6dd;
+  --role-accent: #5f8f1f;
+}
+[data-role-theme="patient-red"] {
+  --role-base: #fbe6ea;
+  --role-accent: #b5486a;
+}
+[data-role-theme="provider"] {
+  --role-base: #eef0f2;
+  --role-accent: #22314f;
+}
+[data-role-theme="caregiver"] {
+  --role-base: #fdebf1;
+  --role-accent: #c9b82e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface-1: #1a1a19;
+    --plane: #0d0d0d;
+    --text-primary: #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted: #898781;
+    --grid: #2c2c2a;
+    --baseline: #383835;
+    --border: rgba(255, 255, 255, 0.18);
+
+    --status-good: #0ca30c;
+    --status-warning: #fab219;
+    --status-serious: #ec835a;
+    --status-critical: #d03b3b;
+
+    --series-1: #3987e5;
+    --series-2: #199e70;
+    --series-3: #c98500;
+    --series-4: #9085e9;
+    --series-5: #e66767;
+    --series-6: #d95926;
+
+    --role-base: #1c1e21;
+    --role-accent: #93a3b8;
+  }
+
+  [data-role-theme="patient-blue"] {
+    --role-base: #122430;
+    --role-accent: #56c2f0;
+  }
+  [data-role-theme="patient-green"] {
+    --role-base: #1b2414;
+    --role-accent: #94cf52;
+  }
+  [data-role-theme="patient-red"] {
+    --role-base: #2a171b;
+    --role-accent: #e37fa0;
+  }
+  [data-role-theme="provider"] {
+    --role-base: #1d2226;
+    --role-accent: #8fb4de;
+  }
+  [data-role-theme="caregiver"] {
+    --role-base: #241820;
+    --role-accent: #e8d95c;
+  }
+}
+
+body {
+  background-color: var(--plane);
+  color: var(--text-primary);
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in {
+  animation: fade-in-up 0.35s ease-out both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in {
+    animation: none;
+  }
+}
